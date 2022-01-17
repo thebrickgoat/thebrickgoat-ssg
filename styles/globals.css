@@ -14,10 +14,101 @@ html {
   font-family: Helvetica, sans-serif, monospace;
 }
 
-.container{
-  padding:30px
-
+.container {
+  padding: 30px;
 }
+
+.grid {
+  width: auto;
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 3;
+}
+
+.grid-item {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background: #ffffff;
+  /* border: 4px solid  var(--c1); */
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px;
+  width: -moz-calc(33% - 17px);
+  width: calc(33% - 17px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.grid-text {
+  margin-top: 25px;
+}
+
+.grid-text h1 {
+  font-size: 2em;
+  color: var(--c1);
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.grid-text h3 {
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-weight: 100;
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 20px;
+  background-size: 40px 40px;
+  -webkit-animation-name: wavy-down;
+  -moz-animation-name: wavy-down;
+  animation-name: wavy-down;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.wave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 30px;
+  background-size: 80px 40px;
+  -webkit-animation-name: wav-yup;
+  -moz-animation-name: wavy-up;
+  animation-name: wavy-up;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
 /* animations */
 
 @-webkit-keyframes color-transition {

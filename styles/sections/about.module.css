@@ -1,0 +1,74 @@
+.about {
+  background: var(--c1);
+  padding-bottom: 155px;
+  margin-top: 85vh;
+  overflow: hidden;
+  padding-top: 75px;
+  display: flex;
+}
+
+.about p {
+  text-align: center;
+  font-size: 4em;
+  color: var(--c2);
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+.about img {
+  margin: auto;
+  width: 65%;
+}
+
+.about h1 {
+  font-size: 5vw;
+  color: var(--c2);
+  text-align: left;
+  width: 60%;
+  margin: 0.3em 0;
+}
+
+.about h2 {
+  font-size: 1.5em;
+}
+
+.about p {
+  font-size: 1em;
+}
+
+.lilme {
+  position: absolute;
+  bottom: -25px;
+  right: -50px;
+  width: 39%;
+}
+
+.about::before {
+  background-image: -moz-radial-gradient(
+    20px -10px,
+    circle,
+    transparent 24px,
+    var(--c2) 5px
+  );
+  background-image: radial-gradient(
+    circle at 20px -10px,
+    transparent 24px,
+    var(--c2) 5px
+  );
+}
+
+.about::after {
+  background-image: -moz-radial-gradient(
+    20px 30px,
+    circle,
+    var(--c2) 25px,
+    transparent 25px
+  );
+  background-image: radial-gradient(
+    circle at 20px 30px,
+    var(--c2) 25px,
+    transparent 25px
+  );
+}

@@ -1,36 +1,46 @@
+
+import Image from "next/image";
+
+import styles from "styles/sections/work.module.css"
+import GridItem from "./grid-item";
+
 export default function Work() {
-    return(
-    <>
-              <section className="port">
+  return (
+      <section className={styles.work}>
         <div className="container">
-          <div className="filters">
+          <div className={styles.filters}>
             <h1>THE THINGS I'VE DONE</h1>
-            <div className="filterButtons">
-              <button className="sortIll">Illustration</button>
-              <button className="sortVideo">Video</button>
-              <button className="sortDesign">Design</button>
-              <button className="sortCode">Code</button>
+            <div className={styles.filterButtons}>
+              <button className={styles.sortIll}>Illustration</button>
+              <button className={styles.sortVideo}>Video</button>
+              <button className={styles.sortDesign}>Design</button>
+              <button className={styles.sortCode}>Code</button>
             </div>
           </div>
           <div className="grid">
+
+            <GridItem title="Carpet Shoes"  imageSrc ="/imgs/workpics/carpetshoes.png" imageAlt ="Carpet Shoes Site"  body="Who's to say you can be comfortable in your consumerist
+                  nightmare." tags="design, shopify, code" date="2/18" ></GridItem>
+
             <div className="grid-item sortCode sortDesign">
               <img
                 src="/imgs/workpics/carpetshoes.png"
                 alt="derple"
-                className="worksImg"
               />
               <div className="grid-text">
                 <h1>Carpet Shoes</h1>
                 <p>
                   Who's to say you can be comfortable in your consumerist
-                  nightmare.<a href="https://carpetshoes.myshopify.com/">
-                    Culture death has never been softer.</a
-                  >
+                  nightmare.
+                  <a href="https://carpetshoes.myshopify.com/">
+                    Culture death has never been softer.
+                  </a>
                 </p>
                 <h2>design, shopify, code</h2>
                 <h3>2/18</h3>
               </div>
             </div>
+
             <div className="grid-item sortCode sortDesign">
               <img
                 src="/imgs/workpics/tempin.png"
@@ -219,18 +229,17 @@ export default function Work() {
                   NCAA levels of play. On top of managing production, I did
                   design work for organizations ranging from the Atlanta Hawks
                   to the Boston Celtics. Oh, and of course the
-                  <a
-                    href="http://www.slubillikens.com/ViewArticle.dbml?DB_OEM_ID=27200&ATCLID=205243413"
-                    >BILIKENS.</a
-                  >
+                  <a href="http://www.slubillikens.com/ViewArticle.dbml?DB_OEM_ID=27200&ATCLID=205243413">
+                    BILIKENS.
+                  </a>
                   Who could forget those... guys? Imps?
-                  <a href="https://en.wikipedia.org/wiki/Billiken"
-                    >Charm Dolls?</a
-                  >
+                  <a href="https://en.wikipedia.org/wiki/Billiken">
+                    Charm Dolls?
+                  </a>
                   Anyway,
                   <a href="https://pratersflooring.com/flooring-gallery/">
-                    check out this page</a
-                  >
+                    check out this page
+                  </a>
                   to see some things I worked on during this period.
                 </p>
                 <h2>design, management, production, code</h2>
@@ -324,9 +333,8 @@ export default function Work() {
                   users in nifty globe form. Using mic input and geolocation
                   APIs, the globe shows the amount of noise that your computer
                   (and others viewing the globe) pics up as well as the location
-                  of said sounds.<a href="https://noisy-globe.glitch.me/"
-                    >Check it out here</a
-                  >
+                  of said sounds.
+                  <a href="https://noisy-globe.glitch.me/">Check it out here</a>
                   if you have a mic and interest in bars.
                 </p>
                 <h2>design, code</h2>
@@ -382,9 +390,9 @@ export default function Work() {
                   An underground overground dance party bringing house music to
                   the valley. I designed the logo and various posters as well as
                   running the lights occasionally. Check out
-                  <a href="https://www.facebook.com/flavorless/"
-                    >their facebook</a
-                  >
+                  <a href="https://www.facebook.com/flavorless/">
+                    their facebook
+                  </a>
                   to get involved and dance for more hours than you previously
                   thought yourself capable.
                 </p>
@@ -402,12 +410,12 @@ export default function Work() {
                 <h1>CBS Sports classNameic</h1>
                 <p>
                   One of my last full top down designs for a sports
-                  organization, the CBS Sport classNameic needed a floor to match
-                  the prestige of their progam. This was the second year I had
-                  brought this vison to court. Visit
-                  <a href="https://cbssportsclassNameic.com/"
-                    >their site if you are interested in basketball</a
-                  >
+                  organization, the CBS Sport classNameic needed a floor to
+                  match the prestige of their progam. This was the second year I
+                  had brought this vison to court. Visit
+                  <a href="https://cbssportsclassNameic.com/">
+                    their site if you are interested in basketball
+                  </a>
                   or just marvel at the fact that the design before mine
                   actually trended on twitter because of how everyone hated it.
                 </p>
@@ -418,6 +426,5 @@ export default function Work() {
           </div>
         </div>
       </section>
-    </>
-    )
+  );
 }

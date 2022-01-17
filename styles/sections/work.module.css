@@ -1,0 +1,128 @@
+.work {
+  background: var(--c2);
+  padding-bottom: 75px;
+}
+
+.work h1 {
+  font-size: 5em;
+  color: var(--c1);
+  text-align: LEFT;
+}
+
+.work .row {
+  padding: 25px 0;
+}
+
+.work button {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: var(--c1);
+  padding: 15px;
+  border: var(--c1) 3px solid;
+  background-color: var(--c2);
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+.work button:hover {
+  color: var(--c2);
+  background-color: var(--c1);
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.work .filters {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-bottom: 15px;
+  width: 100%;
+  background: var(--c2);
+  z-index: 1;
+}
+
+.work .filterButtons {
+  padding: 0 4px;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.work .container img {
+  max-width: -moz-calc(100% + 40px);
+  max-width: calc(100% + 40px);
+  margin: -20px;
+}
+
+.work .container p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+  /* max-width: 360px; */
+}
+.work {
+  background: var(--c2);
+  padding-bottom: 75px;
+}
+
+.work h1 {
+  font-size: 5em;
+  color: var(--c1);
+  text-align: LEFT;
+}
+
+.work .row {
+  padding: 25px 0;
+}
+
+.work button {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: var(--c1);
+  padding: 15px;
+  border: var(--c1) 3px solid;
+  background-color: var(--c2);
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+.work button:hover {
+  color: var(--c2);
+  background-color: var(--c1);
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.work .filters {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-bottom: 15px;
+  width: 100%;
+  background: var(--c2);
+  z-index: 1;
+}
+
+.work .filterButtons {
+  padding: 0 4px;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.work .container img {
+  max-width: -moz-calc(100% + 40px);
+  max-width: calc(100% + 40px);
+  margin: -20px;
+}
+
+.port .container p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+  /* max-width: 360px; */
+}
+.worksImg {
+  max-width: calc(100% + 40px);
+  margin: -20px;
+}

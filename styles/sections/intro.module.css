@@ -1,0 +1,59 @@
+.intro h1 {
+  font-size: 6.3vw;
+  text-transform: uppercase;
+  width: auto;
+  color: var(--c1);
+  margin: 0;
+  text-shadow: 1px 3px 2px rgba(3, 6, 38, 0.42);
+  text-align: left;
+}
+
+.intro h2 {
+  text-transform: uppercase;
+  width: auto;
+  color: var(--c1);
+  text-align: left;
+  margin: 0;
+  text-shadow: 1px 3px 2px rgba(3, 6, 38, 0.42);
+}
+
+.intro img {
+  margin-bottom: -65px;
+}
+
+.intro {
+  text-align: right;
+  background: #117bf0;
+  width: 100%;
+  padding: 0;
+  z-index: 0;
+  position: relative;
+}
+
+.intro::before {
+  background-image: -moz-radial-gradient(
+    20px -10px,
+    circle,
+    transparent 24px,
+    var(--c1) 5px
+  );
+  background-image: radial-gradient(
+    circle at 20px -10px,
+    transparent 24px,
+    var(--c1) 5px
+  );
+}
+
+.intro::after {
+  background-image: -moz-radial-gradient(
+    20px 30px,
+    circle,
+    var(--c1) 25px,
+    transparent 25px
+  );
+  background-image: radial-gradient(
+    circle at 20px 30px,
+    var(--c1) 25px,
+    transparent 25px
+  );
+}
